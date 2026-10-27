@@ -1,0 +1,19 @@
+{
+  "name": "keycloak",
+  "description": "Keycloak client plugin",
+  "single": 1,
+  "nochannels": 1,
+  "passwordProp": "clientSecret",
+  "restartOnChannelsChange": 0,
+  "plugin_popup": [
+    {
+      "id": "syncUsers",
+      "type": "item",
+      "title": "Импорт пользователей KEYCLOAK",
+      "command": "send",
+      "param": {
+        "emit": "plugin_command:syncUsers"
+      }
+    }
+  ]
+}

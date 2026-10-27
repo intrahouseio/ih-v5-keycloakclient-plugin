@@ -1,0 +1,178 @@
+{
+  "grid": [
+    {
+      "id": "p1",
+      "xs": 4,
+      "class": "main",
+      "table": "units"
+    },
+    {
+      "id": "p2",
+      "xs": 5,
+      "class": "main",
+      "table": "units"
+    },
+    {
+      "id": "pbut",
+      "xs": 3,
+      "class": "main",
+      "table": "units"
+    },
+    {
+      "id": "p7",
+      "xs": 9,
+      "class": "main",
+      "table": "units"
+    },
+    {
+      "id": "p3",
+      "xs": 3,
+      "class": "main",
+      "table": "units"
+    },
+    {
+      "id": "p9",
+      "xs": 12,
+      "class": "main",
+      "table": "unitsTreeTable",
+      "height": "fill"
+    }
+  ],
+  "spacing": 10,
+  "p1": [
+    {
+      "prop": "url",
+      "title": "Адрес сервера Keycloak",
+      "type": "input",
+      "default": "http://127.0.0.1:8080"
+    },
+    {
+      "prop": "realm",
+      "title": "Realm",
+      "type": "input",
+      "default": "intrascada"
+    }
+  ],
+  "p2": [
+    {
+      "prop": "header",
+      "title": "Служебная учетная запись Keycloak",
+      "type": "header"
+    },
+    {
+      "prop": "clientId",
+      "title": "Client ID",
+      "type": "input",
+      "default": "intrascada-api"
+    },
+    {
+      "prop": "clientSecret",
+      "title": "Client secret",
+      "type": "password"
+    },
+    {
+      "prop": "authClientId",
+      "title": "Public Client ID",
+      "type": "input",
+      "default": "intrascada"
+    }
+  ],
+  "p3": [
+    {
+      "prop": "loglevel",
+      "title": "$LogLevel",
+      "type": "droplist",
+      "data": "loglevelList"
+    },
+    {
+      "prop": "txt",
+      "title": "$Comment",
+      "type": "input"
+    }
+  ],
+  "p7": [
+    {
+      "prop": "header_groups",
+      "title": "Фильтрация учетных записей по группам и ролям",
+      "type": "header"
+    },
+    {
+      "prop": "groupFilter",
+      "title": "Группы Keycloak",
+      "type": "input",
+      "default": ""
+    },
+    {
+      "prop": "roleFilter",
+      "title": "Роли Keycloak",
+      "type": "input",
+      "default": ""
+    }
+  ],
+  "pbut": [
+    {
+      "prop": "header_actions",
+      "title": "Данные Keycloak",
+      "type": "header"
+    },
+    {
+      "type": "button",
+      "prop": "getGroups",
+      "title": "Показать группы",
+      "command": "plugin_command",
+      "param": "getGroups"
+    },
+    {
+      "type": "button",
+      "prop": "getRoles",
+      "title": "Показать роли",
+      "command": "plugin_command",
+      "param": "getRoles"
+    }
+  ],
+  "p9": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "unitsTreeTable",
+      "columns": [
+        {
+          "prop": "name",
+          "title": "ID",
+          "type": "text",
+          "width": 150
+        },
+        {
+          "prop": "state",
+          "title": "Состояние",
+          "type": "text",
+          "width": 150
+        },
+        {
+          "prop": "laststart",
+          "title": "Время запуска",
+          "type": "text",
+          "width": 150
+        },
+        {
+          "prop": "laststop",
+          "title": "Время останова",
+          "type": "text",
+          "width": 150
+        },
+        {
+          "prop": "uptime",
+          "title": "Uptime",
+          "type": "text",
+          "width": 150
+        },
+        {
+          "prop": "error",
+          "title": "Ошибка",
+          "type": "text",
+          "width": 250
+        }
+      ]
+    }
+  ]
+}
