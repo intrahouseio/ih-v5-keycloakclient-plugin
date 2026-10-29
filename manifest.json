@@ -5,6 +5,7 @@
   "nochannels": 1,
   "passwordProp": "clientSecret",
   "restartOnChannelsChange": 0,
+  "server":"5.19.32",
   "plugin_popup": [
     {
       "id": "syncUsers",
